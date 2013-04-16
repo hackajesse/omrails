@@ -3,6 +3,9 @@
 @import url(http://fonts.googleapis.com/css?family=Oxygen);*/
 
 $btnPrimaryBackground: green;
+$navbarBackgroundHighLight: white;
+$navbarBackground: white;
+
 @import 'bootstrap';
 
 body {
@@ -11,10 +14,43 @@ body {
 
 @import 'bootstrap-responsive';
 
+.navbar-inner {
+	@include box-shadow(non !important);
+	border: 0;
+}
+
 .footer {
 	margin-top: 50px;
 	color: $grayLight;
 	a {
 		color: $gray;
 	}
+}
+
+/* Required for jQuery Masonry */
+
+.box {
+	margin: 5px;
+	padding: 5px;
+	font-size: 11px;
+	line-height: 1.4cm;
+	float: left;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px #444;
+	width: 214px;
+}
+
+.box img {
+	display: block;
+	width: 100%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.description {
+	margin: 10px 0 5px;
+
 }
